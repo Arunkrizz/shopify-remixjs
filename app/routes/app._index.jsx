@@ -89,8 +89,6 @@ function Orders() {
     return (
       <Page  fullWidth
       title="Orders">
-         {/* <ui-title-bar title={"Orders"}>
-          </ui-title-bar> */}
           <Layout>
             <Layout.Section>
         <Card>

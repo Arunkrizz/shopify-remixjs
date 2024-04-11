@@ -3,7 +3,7 @@
 client_id = "79ca85954fb6b5c816b867ab76e721fd"
 name = "stable-sale-app"
 handle = "stable-sale-app-4"
-application_url = "https://aviation-bridal-dairy-idaho.trycloudflare.com"
+application_url = "https://trio-fathers-privileges-terrace.trycloudflare.com"
 embedded = true
 
 [build]
@@ -17,9 +17,9 @@ scopes = "write_products"
 
 [auth]
 redirect_urls = [
-  "https://aviation-bridal-dairy-idaho.trycloudflare.com/auth/callback",
-  "https://aviation-bridal-dairy-idaho.trycloudflare.com/auth/shopify/callback",
-  "https://aviation-bridal-dairy-idaho.trycloudflare.com/api/auth/callback"
+  "https://trio-fathers-privileges-terrace.trycloudflare.com/auth/callback",
+  "https://trio-fathers-privileges-terrace.trycloudflare.com/auth/shopify/callback",
+  "https://trio-fathers-privileges-terrace.trycloudflare.com/api/auth/callback"
 ]
 
 [webhooks]

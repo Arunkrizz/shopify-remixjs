@@ -8,7 +8,8 @@ import {
     Text,
     Checkbox,
     Page,
-    Layout
+    Layout,
+    Badge
   } from "@shopify/polaris";
 
 
@@ -86,9 +87,10 @@ function Orders() {
           
 
     return (
-      <Page>
-         <ui-title-bar title={"Orders"}>
-          </ui-title-bar>
+      <Page  fullWidth
+      title="Orders">
+         {/* <ui-title-bar title={"Orders"}>
+          </ui-title-bar> */}
           <Layout>
             <Layout.Section>
         <Card>
@@ -123,8 +125,8 @@ function Orders() {
             <Text>{order.node.id}</Text>,
             <Text>{new Date(order.node.createdAt).toLocaleDateString()}</Text>,
             <Text>{order.node.customer.displayName}</Text>,
-            <Text>{order.node.financialStatus}</Text>,
-            <Text>{order.node.fulfillmentStatus}</Text>,
+            <Badge tone={order.node.financialStatus === "paid" ? "success" : "default"}>{order.node.financialStatus}</Badge>,
+            <Badge tone={order.node.fulfillmentStatus === "fulfilled" ? "success" : "default"}>{order.node.fulfillmentStatus}</Badge>,
             <Text>{`${order.node.totalPriceSet.shopMoney.amount} ${order.node.totalPriceSet.shopMoney.currencyCode}`}</Text>,
           ])}
           textAlign="left" // Align checkboxes and text to the left
